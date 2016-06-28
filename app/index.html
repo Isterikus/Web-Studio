@@ -1,48 +1,60 @@
-<!DOCTYPE html>
-<html lang="ru">
+<!DOCTYPE html> 
+<html lang="en"> 
+<head> 
+<meta charset="UTF-8"> 
+<title>Document</title> 
+<!-- bower:css -->
+<!-- build:css css/combined.min.css -->
+<link rel="stylesheet" href="css/main.css"> 
+<link rel="stylesheet" href="libs/bootstrap/dist/css/bootstrap.css"> 
+<!-- endbuild -->
+<!-- endbowe -->
 
-<head>
-    <meta charset="UTF-8">
-    <title>App</title>
-    <!-- build:css css/vendor.min.css -->
-    <!-- bower:css -->
-    <link rel="stylesheet" href="libs/Materialize/bin/materialize.css" />
-    <!-- endbower -->
-    <!-- endbuild -->
-    <!-- build:css css/main.min.css -->
-    <link rel="stylesheet" href="css/main.css">
-    <!-- endbuild -->
-</head>
+<link rel="stylesheet" href="libs/Materialize/bin/materialize.css" />
+
+</head> 
+<body> 
 
 <body>
-    <nav class="black">
-        <div class="container">
-            <div class="row">
-                <div class="nav-wrapper">
-                    <a href="#" class="brand-logo">Logo</a>
-                    <ul id="nav-mobile" class="right hide-on-med-and-down">
-                        <li><a>Portfolio</a></li>
-                        <li><a>About</a></li>
-                    </ul>
-                </div>
-            </div>
-        </div>
+    <nav>
+
+    <div id = "navMenu" class="aqua">
+        <div class="red"></div>
+    </div>
+        <!-- <ul>
+            <li><a>Главная</a></li>
+            <li><a>О нас</a></li>
+            <li><a>Как мы работаем</a></li>
+            <li><a>Почему мы?</a></li>
+            <li><a>Наши работы</a></li>
+        </ul> -->
+        <a href="#"><div id="down" onclick="SlideDown()" class="Display navbuttonTop" alt="">
+            <div class="row"></div><div class="row"></div>
+        </div></a>
+        <a href="#"><div id ="up" onclick="SlideUp()" class="noDisplay navbuttonBot">
+            <div class="row"></div><div class="row"></div>
+        </div></a>
     </nav>
 
-    <div class="main"></div>
+    <div class="main">
+        <header>
+        <div class="logo">
+        <h1 id="1">INSPIRE</h1>
+        <div id="StringAppear" class="empty"></div>
+        <br><br>
+        <div class="innovate" id="10"><p class="p">Innovating the present... Ignites the future.</p></div>
+        </div>
+            <img class = "cover" src="img/header.jpg" alt="">
+        </header>
 
-    <!-- build:js js/vendor.min.js -->
-    <!-- bower:js -->
-    <script src="libs/jquery/dist/jquery.js"></script>
-    <script src="libs/Materialize/bin/materialize.js"></script>
-    <script src="libs/angular/angular.js"></script>
-    <script src="libs/angular-ui-router/release/angular-ui-router.js"></script>
-    <!-- endbower -->
-    <!-- endbuild -->
-    <!-- build:js js/main.min.js -->
-    <script src="js/app.js"></script>
-    <script src="js/controllers/todoCtrl.js"></script>
-    <!-- endbuild -->
-</body>
+    
 
-</html>
+<!-- build:js scripts/vender.min.js -->
+<!-- bower:js -->
+<script src="libs/jquery/dist/jquery.js"></script> 
+<script src="libs/bootstrap/dist/js/bootstrap.js"></script> 
+<script src="libs/angular/angular.min.js"></script> 
+<!-- endbower -->
+<script src="js/main.js"></script> 
+</body> 
+</html>   
